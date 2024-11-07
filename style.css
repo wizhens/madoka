@@ -1,0 +1,829 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.jp_text {
+  font-family: "BIZ UDPMincho", serif;
+}
+
+.en_text {
+  font-family: "Abril Fatface", serif;
+}
+
+.normal_text {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  line-height: 48px;
+  color: rgb(12, 95, 60);
+}
+
+/* セクションのタイトル */
+.section_title {
+  width: fit-content;
+  color: rgb(12, 95, 60);
+
+  span {
+    display: block;
+    height: 1px;
+    width: 85%;
+    border-bottom: solid 4px yellowgreen;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: center;
+    font-family: "BIZ UDPMincho", serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 44px;
+    font-weight: 200;
+    line-height: 36px;
+    letter-spacing: 4px;
+  }
+}
+
+/* Moreのボタン */
+.more_button {
+  width: fit-content;
+
+  div {
+    padding: 32px 80px;
+    border: solid 1px rgb(0, 85, 0);
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-family: "Abril Fatface", serif;
+    font-size: 32px;
+    position: relative;
+    color: rgb(0, 85, 0);
+  }
+
+  span.left {
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 96px;
+    border-top: solid 1px green;
+    top: 50%;
+    left: -60px;
+  }
+
+  span.right {
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 96px;
+    border-top: solid 1px green;
+    top: 50%;
+    right: -60px;
+  }
+}
+
+/* ヘッダー */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 85, 0);
+
+    img {
+      width: 40px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 200px;
+  }
+
+  ul {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 40px;
+  }
+}
+
+.reservation {
+  background: yellowgreen;
+  color: white;
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+  writing-mode: vertical-rl;
+  padding: 54px 48px;
+  font-family: "BIZ UDPMincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("/image/top_slider01.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 50%;
+    min-width: 240px;
+  }
+}
+
+.concept {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  font-family: "BIZ UDPMincho", serif;
+  position: relative;
+  overflow: hidden;
+
+  .introduction {
+    margin-top: 64px;
+    padding-top: 300px;
+    position: relative;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 64px;
+      color: rgb(0, 85, 0);
+    }
+
+    .introduction_text {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 640px;
+      width: 100%;
+    }
+
+    img {
+      transform: translateX(360px);
+    }
+  }
+
+  .concept_title {
+    position: relative;
+
+    .concept_title_back {
+      font-size: 64px;
+      font-family: "Abril Fatface", serif;
+      font-weight: 400;
+      letter-spacing: 10px;
+      font-style: normal;
+      color: rgb(205, 221, 172);
+    }
+
+    .section_title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(24px);
+    }
+  }
+
+  span {
+    display: block;
+    width: 1px;
+    height: 160px;
+    border-right: solid 1px green;
+    margin: 32px auto 16px auto;
+  }
+}
+
+.news_section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .news_container {
+    margin: 0 auto;
+    max-width: 900px;
+    height: 450px;
+    background: rgb(229, 240, 209);
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .news_content {
+      display: flex;
+      flex: 1;
+
+      .left {
+        flex: 1;
+      }
+
+      ul {
+        flex: 1;
+        padding: 80px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "BIZ UDPMincho", serif;
+
+        span {
+          display: block;
+          width: 60px;
+        }
+
+        li {
+          display: flex;
+        }
+      }
+    }
+    .more_button {
+      margin: 0 auto;
+    }
+  }
+}
+
+.news_container img {
+  position: absolute;
+  bottom: 80px;
+  left: 112px;
+  width: 240px;
+}
+
+.lunch_section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    position: relative;
+
+    .main_img {
+      width: 85%;
+    }
+
+    .container2 {
+      padding-right: 8px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      img {
+        width: 420px;
+      }
+
+      .title_and_button {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+      }
+    }
+
+    .olive {
+      position: absolute;
+      bottom: -128px;
+      left: -32px;
+    }
+  }
+}
+
+.dinner_section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: right;
+
+  .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+      width: 85%;
+    }
+
+    .container2 {
+      padding-left: 8px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      img {
+        width: 240px;
+      }
+
+      .title_and_button {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+      }
+    }
+  }
+}
+
+.chef_section {
+  padding: 32px 0;
+
+  .chef_container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+
+    .container {
+      flex: 1;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+
+      .section_title {
+        margin: 16px 0;
+      }
+
+      h2 {
+        font-family: "BIZ UDPMincho", serif;
+        color: rgb(0, 85, 0);
+        font-weight: 600;
+        margin-top: 64px;
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+.gallery_section {
+  padding: 32px 0;
+  display: grid;
+  gap: 10px; /* 画像間の余白 */
+  grid-auto-rows: 250px; /* 例として200pxの高さに統一 */
+  grid-template-columns: repeat(5, 1fr); /* カラム数を設定 */
+
+  img {
+    display: block;
+    aspect-ratio: 300/250;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  img:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  img:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  img:nth-child(3) {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+  img:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  img:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  img:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  img:nth-child(7) {
+    grid-column: 4 / 6;
+  }
+}
+
+.access_section {
+  padding: 32px 0;
+
+  .section_title {
+    margin: 16px auto;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 64px 0;
+    gap: 32px;
+
+    div {
+      flex: 1;
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+
+    li {
+      display: flex;
+      margin: 32px 0;
+      font-size: 20px;
+
+      .info_title {
+        width: 120px;
+      }
+
+      p:first-child {
+        color: yellowgreen;
+      }
+    }
+  }
+}
+
+.reservation_section {
+  overflow: hidden;
+  .container {
+    max-width: 1060px;
+    padding: 32px;
+    margin: 0 auto;
+    position: relative;
+
+    .container2 {
+      width: 80%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(229, 240, 209, 0.651);
+      padding: 32px 0;
+
+      .section_title {
+        margin: 32px auto;
+      }
+      p {
+        text-align: center;
+      }
+
+      .button_container {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin: 32px 0 64px 0;
+
+        .button {
+          width: 200px;
+          text-align: center;
+          padding: 32px 16px;
+          background: yellowgreen;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-image: url("/image/top_slider02.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.199);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: " ";
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+
+    img {
+      width: 400px;
+    }
+    ul {
+      display: flex;
+      gap: 48px;
+      font-size: 24px;
+      font-family: "Abril Fatface", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservation {
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  .top {
+    height: 450px;
+  }
+
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  .concept {
+    padding: 8px;
+  }
+
+  .news_section {
+    .news_container {
+      padding-left: 0;
+      padding-right: 0;
+      .news_content {
+        flex-direction: column;
+        .left {
+          flex: 0;
+        }
+        .section_title {
+          margin: 0 auto;
+        }
+        ul {
+          padding: 48px 0;
+          width: fit-content;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .chef_section {
+    .chef_container {
+      .container {
+        .section_title {
+          margin: 0 auto;
+        }
+        h2 {
+          margin-top: 32px;
+          justify-content: center;
+        }
+      }
+
+      padding: 0 8px;
+      flex-direction: column;
+    }
+  }
+
+  .gallery_section {
+    display: none;
+  }
+
+  footer {
+    height: 400px;
+    nav {
+      display: none;
+    }
+
+    .inner {
+      img {
+        width: 300px;
+      }
+      p {
+        width: 300px;
+      }
+    }
+  }
+
+  .lunch_section {
+    .container {
+      .container2 {
+        padding-right: 8px;
+        img {
+          width: 240px;
+        }
+        .title_and_button {
+          gap: 24px;
+        }
+      }
+      p {
+        padding: 0 8px;
+      }
+    }
+  }
+
+  .dinner_section {
+    .container {
+      .container2 {
+        img {
+          width: 160px;
+        }
+        .title_and_button {
+          gap: 24px;
+        }
+      }
+      p {
+        padding: 0 8px;
+      }
+    }
+  }
+  .access_section {
+    .container {
+      flex-direction: column;
+      padding-left: 8px;
+      padding-right: 8px;
+      iframe {
+        aspect-ratio: 3/2;
+      }
+
+      ul {
+        width: fit-content;
+        margin: 0 auto;
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .reservation_section {
+    .container {
+      .container2 {
+        width: calc(100% - 16px);
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .button_container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Moreのボタン */
+  .more_button {
+    width: fit-content;
+
+    div {
+      padding: 24px 64px;
+      border: solid 1px rgb(0, 85, 0);
+      text-align: center;
+      margin: 0 auto;
+      width: fit-content;
+      font-family: "Abril Fatface", serif;
+      font-size: 20px;
+      position: relative;
+      color: rgb(0, 85, 0);
+    }
+
+    span.left {
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 96px;
+      border-top: solid 1px green;
+      top: 50%;
+      left: -60px;
+    }
+
+    span.right {
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 96px;
+      border-top: solid 1px green;
+      top: 50%;
+      right: -60px;
+    }
+  }
+  .section_title {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .normal_text {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .top {
+    height: 360px;
+  }
+  .reservation {
+    font-size: 16px;
+    padding: 24px;
+  }
+  header {
+    padding-left: 8px;
+    img {
+      width: 120px;
+    }
+  }
+  .concept {
+    span {
+      height: 64px;
+    }
+    .introduction {
+      margin-top: 32px;
+      .introduction_text {
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .news_section {
+    .news_container {
+      .news_content {
+        ul {
+          li {
+            span {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lunch_section {
+    .container {
+      .container2 {
+        .title_and_button {
+          justify-content: start;
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  .dinner_section {
+    .container {
+      .container2 {
+        img {
+          width: 120px;
+        }
+        .title_and_button {
+          justify-content: start;
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+}
